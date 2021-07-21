@@ -1,0 +1,8 @@
+.Logo{
+    display:flex;
+    justify-content:center;
+    background-color: rgb(230, 225, 225);
+}
+.Logo img{
+    width: 200px;
+}
