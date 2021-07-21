@@ -1,0 +1,11 @@
+.checkbox {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(226, 224, 220);
+    border-radius:50px 50px 50px 50px;
+    padding: 10px;
+    }
+    li{
+        list-style: none;
+        margin:auto;
+    }

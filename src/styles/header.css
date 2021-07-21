@@ -1,7 +1,9 @@
 .Logo{
     display:flex;
     justify-content:center;
-    background-color: rgb(230, 225, 225);
+    background-color: rgb(182, 178, 178);
+    width: 100% !important;
+    height: 100% !important;
 }
 .Logo img{
     width: 200px;

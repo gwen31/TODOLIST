@@ -1,0 +1,22 @@
+.card{
+    margin: 30px auto;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 350px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0.5px solid rgb(190, 187, 187);
+    box-shadow: 10px 5px 5px rgb(206, 204, 204);   
+}
+img{
+    width: 350px;
+}
+.list{
+    font-size:1.2em;
+    background-color:rgb(197, 194, 194);
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px rgb(206, 204, 204); 
+}
