@@ -2,7 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from "axios";
 import CardDepartment from "../components/Card";
-import "../styles/departement.css"
+
+import "../styles/departement.css";
 
 
 const Department = () => {
