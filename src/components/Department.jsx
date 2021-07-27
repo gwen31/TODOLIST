@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import CardDepartment from "../components/Card";
+import CardDepartement from "../components/CardDepartement";
 
 import "../styles/departement.css";
 
@@ -38,7 +38,7 @@ const Department = () => {
                 </div>
                 {data.filter((departement) => departement.region.includes(selectedRegion))
                     .map((departement) => (
-                        <CardDepartment departement={departement} key={departement.name} />
+                        <CardDepartement key={departement.id} departement={departement} />
                     ))}
             </div>
 

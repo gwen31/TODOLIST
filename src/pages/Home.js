@@ -9,14 +9,9 @@ const Home = () => {
         <div className="navbar">
             <Header />
             <Switch>
-                <Route exact path="/" component={Department}>
-                    <Department />
-                </Route>
-                <Route exact path="/lieu" component={Lieu}>
-                    <Lieu />
-                </Route>
+                <Route exact path="/" component={Department} />
+                <Route exact path="/departements/:id/lieux" component={Lieu} />
             </Switch>
-
         </div>
 
     );

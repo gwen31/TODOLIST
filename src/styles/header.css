@@ -1,3 +1,4 @@
+@media(max-width:748px){
 .Logo{
     display:flex;
     justify-content:center;
@@ -7,4 +8,29 @@
 }
 .Logo img{
     width: 200px;
+    margin-left:10px;
+}
+.icons{
+    margin-top: 10px;
+    font-size:2.5rem;
+    color: black;
+}
+}
+@media(min-width:748px){
+    .Logo{
+        display:flex;
+        justify-content:center;
+        background-color: rgb(182, 178, 178);
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .Logo img{
+        width: 200px;
+        margin-left:10px;
+    }
+    .icons{
+        margin-top: 10px;
+        font-size:2.5rem;
+        color: black;
+    }
 }

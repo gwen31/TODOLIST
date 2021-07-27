@@ -1,5 +1,5 @@
 @media(max-width:748px){
-.card{
+.card-departement{
     margin: 30px auto;
     margin-bottom:30px;
     display:flex;
@@ -20,4 +20,28 @@ img{
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 10px;
 }
+}
+@media(min-width:748px){
+    .card{
+        margin: 30px auto;
+        margin-bottom:30px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width: 350px;
+        border-radius: 5px 5px 5px 5px;
+        border: 0.5px solid rgb(190, 187, 187);
+        box-shadow: 10px 10px 10px rgb(206, 204, 204);   
+    }
+    img{
+        width: 350px;
+    }
+    .list{
+        font-size:1.2em;
+        background-color:rgb(197, 194, 194);
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 10px;
+    }
+
 }

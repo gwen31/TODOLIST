@@ -1,24 +1,35 @@
-import axios from 'axios';
-import React from 'react';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 import "../styles/addlieu.css";
 
 function AddLieu() {
+    let { id } = useParams();
     const [newLieu, setNewLieu] = useState('');
 
-    axios
-        .post('http://localhost:4000/lieux',)
-
-        .then(() => {
-            setNewLieu("");
-            AddLieu();
-        });
     const handleSubmit = e => {
         e.preventDefault();
+        setTimeout(() => {
+            axios
+                .post(`http://localhost:4000/lieux`, {
+                    endroit: newLieu,
+                    departement_id: id
+                })
+                .then(() => {
+                    setNewLieu('')
+                });
+        }, 500);
 
     };
+    function refreshPage() {
+        setTimeout(() => {
+            window.location.reload(false);
+        }, 500);
+        console.log('page to reload')
+    }
+
     return (
-        <form className="" onSubmit={(e) => handleSubmit(e)}>
+        <form className="" onSubmit={handleSubmit}>
             <input className="add"
                 onChange={(e) => setNewLieu(e.target.value)}
                 type='text'
@@ -26,7 +37,9 @@ function AddLieu() {
                 placeholder="Ajouter une lieu"
                 value={newLieu}
             />
-            <input className="btn-add" type="submit" value="✅" />
+            <button className="btn-add" type="submit" onClick={refreshPage}>✅</button>
+
+
         </form>
     );
 };
