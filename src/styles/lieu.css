@@ -1,0 +1,8 @@
+@media(min-width:748px){
+    .cardlieu{
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+}

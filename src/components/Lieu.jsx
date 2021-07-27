@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import CardLieu from "../components/CardLieu";
 import AddLieu from '../components/Addlieu';
 import { useState, useEffect } from 'react';
+import "../styles/lieu.css";
 
 const Lieu = () => {
     let { id } = useParams();
@@ -17,11 +18,14 @@ const Lieu = () => {
     }, [id]);
 
     return (
-        <div>
+        <div className="input-lieu">
             <AddLieu />
-            {lieudata.map((lieu) => (
-                <CardLieu key={lieu.id} lieu={lieu} />
-            ))}
+            <div className="cardlieu">
+                {lieudata.map((lieu) => (
+                    <CardLieu id={lieu.id} lieu={lieu} />
+                ))}
+            </div>
+
         </div>
     );
 };

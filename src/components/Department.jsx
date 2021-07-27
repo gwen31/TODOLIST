@@ -36,12 +36,13 @@ const Department = () => {
                 <div className="cancel">
                     {selectedRegion && <h5 onClick={() => setSelectedRegion("")}>Annuler recherche</h5>}
                 </div>
-                {data.filter((departement) => departement.region.includes(selectedRegion))
-                    .map((departement) => (
-                        <CardDepartement key={departement.id} departement={departement} />
-                    ))}
+                <div className="carddep">
+                    {data.filter((departement) => departement.region.includes(selectedRegion))
+                        .map((departement) => (
+                            <CardDepartement key={departement.id} departement={departement} />
+                        ))}
+                </div>
             </div>
-
         </div>
     );
 };

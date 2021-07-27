@@ -1,5 +1,5 @@
 @media(max-width:748px){
-.card-departement{
+.departement{
     margin: 30px auto;
     margin-bottom:30px;
     display:flex;
@@ -22,13 +22,9 @@ img{
 }
 }
 @media(min-width:748px){
-    .card{
-        margin: 30px auto;
+    .departement{
+        margin-left: 30px;
         margin-bottom:30px;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
         width: 350px;
         border-radius: 5px 5px 5px 5px;
         border: 0.5px solid rgb(190, 187, 187);

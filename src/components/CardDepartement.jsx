@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "../styles/card.css";
+import "../styles/carddepartement.css";
 
 const CardDepartement = (props) => {
 
@@ -8,7 +8,7 @@ const CardDepartement = (props) => {
     console.log("id" + departement.id);
 
     return (
-        <div className="card-departement">
+        <div className="departement">
             <div className="card">
                 <img src={departement.image} alt="image" />
                 <h2>{departement.name}</h2>
