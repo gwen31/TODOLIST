@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import CardDepartement from "../components/CardDepartement";
 
+
 import "../styles/departement.css";
 
 
@@ -35,15 +36,17 @@ const Department = () => {
                 </ul>
                 <div className="cancel">
                     {selectedRegion && <h5 onClick={() => setSelectedRegion("")}>Annuler recherche</h5>}
+
                 </div>
                 <div className="carddep">
-                    {data.filter((departement) => departement.region.includes(selectedRegion))
+                    {data
+                        .filter((departement) => departement.region.includes(selectedRegion))
                         .map((departement) => (
                             <CardDepartement key={departement.id} departement={departement} />
                         ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

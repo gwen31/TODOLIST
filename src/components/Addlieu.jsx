@@ -34,7 +34,7 @@ function AddLieu() {
                 onChange={(e) => setNewLieu(e.target.value)}
                 type='text'
                 name='text'
-                placeholder="Ajouter une lieu"
+                placeholder="Ajouter un lieu"
                 value={newLieu}
             />
             <button className="btn-add" type="submit" onClick={refreshPage}>✅</button>
